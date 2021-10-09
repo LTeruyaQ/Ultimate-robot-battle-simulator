@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+    max-height: 80vh;
+    max-width:100vw;
+    cursor: none;
+}
+
+body{
+    background-image: url(../img/backgound/backGoundPartida.gif);
+    position: static;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+}
+
+#arena{
+    background-image: url(../img/backgound/backGoundPartida.gif);
+    position: static;
+    height: 36.5vw; 
+    width: 120vw;   
+    border: solid 10px rgb(9, 0, 139) ;
+    background-image: url(../img/backgound/arena.png);
+    background-repeat: no-repeat;
+    background-size: 101%;
+    margin: 7% 0% 7% 0%;
+
+}
+
+#bordaArena{
+    height: 22.5vw;
+    width: 45vw; 
+    border: solid 10px rgb(255, 0, 0) ;
+    position: relative;
+    z-index: 1;
+    top: 20%;
+    left: 13%;
+}
+
+.playerArea{
+    align-items: center;
+    height: 100%;
+    width: 40%;
+
+}
+
+.controle{
+    margin: 5% 10%;
+    display: block;
+    justify-content: space-around;
+}
+
+.teclas{
+    position: absolute;
+    height: 25vh;
+    width: 40vh;
+}
+
+#w{
+    padding: 0% 5vw;
+    height: 10vh;
+}
+
+#a{
+
+    height: 10vh;
+}
+
+#s{
+
+    height: 10vh;
+}
+
+#d{
+
+    height: 10vh;
+}
+
+
+#cima{
+    padding: 0% 5vw;
+    height: 10vh;
+}
+
+#esquerda{
+
+    height: 10vh;
+}
+
+#baixo{
+
+    height: 10vh;
+}
+
+#direita{
+
+    height: 10vh;
+}
+
+.naves{
+    height: 7vh;
+    padding: 0;
+    margin: 0;
+}
