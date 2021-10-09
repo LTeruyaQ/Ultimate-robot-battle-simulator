@@ -4,7 +4,7 @@
     box-sizing: border-box;   
     max-height: 80vh;
     max-width:100vw;
-    cursor: none;
+    /*cursor: none;*/
 }
 
 body{
@@ -42,20 +42,22 @@ a{
 }
 
 .playerArea{
-    align-items: center;
-    height: 100%;
+    margin: 15vh 0;
+    height: 80vh;
     width: 40%;
-
+    display: block;
 }
 
-.controle{
-    margin: 5% 10%;
+.status{
     display: block;
+    padding: 15% 25%;
+    height: 50vh;
+    width: 100%;
     justify-content: space-around;
 }
 
 .teclas{
-    position: absolute;
+    padding: 15% 10%;
     height: 25vh;
     width: 40vh;
 }
@@ -102,7 +104,17 @@ a{
 }
 
 .naves{
-    height: 7vh;
+    height: 6vh;
     padding: 0;
     margin: 0;
+}
+
+.vidas{
+    height: 6vh;
+    padding: 0;
+    margin: -1vw;
+}
+
+.modelo{
+    height: 20vh;   
 }
