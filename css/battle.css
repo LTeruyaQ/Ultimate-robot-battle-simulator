@@ -29,9 +29,11 @@ div.status{
 }
 
 div.teclas{
+    position: relative;
     padding: 15% 10%;
     height: 25vh;
     width: 40vh;
+    left: 0.5vw;
 }
 
 div.playerArea{
@@ -58,7 +60,8 @@ div.playerArea{
 #bordaArena{
     height: 22.5vw;
     width: 45vw; 
-    border: solid 10px rgb(255, 0, 0) ;
+    border: solid 5px rgb(255, 255, 255);
+    border-radius: 115px;
     position: relative;
     z-index: 1;
     top: 20%;
@@ -68,48 +71,89 @@ div.playerArea{
 /*Controle 1 - setas*/
 
 #cima{
-    padding: 0% 5vw;
+    margin: 0 5vw;
     height: 10vh;
+    width: 10vh;
+    background: transparent;
+    background-image: url(../img/Controles/setas/cima.png);
+    border: none !important;
+    background-size: 100%;
 }
 
 #esquerda{
-
     height: 10vh;
+    width: 10vh;
+    background: transparent;
+    background-image: url(../img/Controles/setas/esquerda.png);
+    border: none !important;
+    background-size: 100%;
 }
 
 #baixo{
-
     height: 10vh;
+    width: 10vh;
+    background: transparent;
+    background-image: url(../img/Controles/setas/baixo.png);
+    border: none !important;
+    background-size: 100%;
 }
 
 #direita{
-
     height: 10vh;
+    width: 10vh;
+    background: transparent;
+    background-image: url(../img/Controles/setas/direita.png);
+    border: none !important;
+    background-size: 100%;
 }
 
 
 /*Controle 2 -wasd*/
 
 #w{
-    padding: 0% 5vw;
+    margin: 0 5vw;
     height: 10vh;
+    width: 10vh;
+    background: transparent;
+    background-image: url(../img/Controles/wasd/w.png);
+    border: none !important;
+    background-size: 100%;
 }
 
 #a{
-
     height: 10vh;
+    width: 10vh;
+    background: transparent;
+    background-image: url(../img/Controles/wasd/a.png);
+    border: none !important;
+    background-size: 100%;
 }
 
 #s{
-
     height: 10vh;
+    width: 10vh;
+    background: transparent;
+    background-image: url(../img/Controles/wasd/s.png);
+    border: none !important;
+    background-size: 100%;
 }
 
 #d{
-
     height: 10vh;
+    width: 10vh;
+    background: transparent;
+    background-image: url(../img/Controles/wasd/d.png);
+    border: none !important;
+    background-size: 100%;
 }
 
+#player1{
+    background-image: url(../img/Players/nave1.png);
+}
+
+#player2{
+    background-image: url(../img/Players/nave2.png);
+}
 /*formatação de imagem*/
 
 img.naves{
@@ -119,17 +163,92 @@ img.naves{
 }
 
 img.vidas{
+    position: relative;
     height: 6vh;
     padding: 0;
     margin: -1vw;
+    left: 0.5vw;
 }
 
 img.modelo{
     height: 20vh;   
+    margin: 50% 0;
 }
 
 /*Eventos*/
 
 #d:-ms-keyboard-active{
+    height: 10vh;
+    width: 10vh;
+    background: transparent;
+    background-image: url(../img/Controles/wasd/d-selected.png);
+    border: none !important;
+    background-size: 100%;
+}
 
+#d:-ms-keyboard-active{
+    height: 10vh;
+    width: 10vh;
+    background: transparent;
+    background-image: url(../img/Controles/wasd/d-selected.png);
+    border: none !important;
+    background-size: 100%;
+}
+
+#d:-ms-keyboard-active{
+    height: 10vh;
+    width: 10vh;
+    background: transparent;
+    background-image: url(../img/Controles/wasd/d-selected.png);
+    border: none !important;
+    background-size: 100%;
+}
+
+#d:-ms-keyboard-active{
+    height: 10vh;
+    width: 10vh;
+    background: transparent;
+    background-image: url(../img/Controles/wasd/d-selected.png);
+    border: none !important;
+    background-size: 100%;
+}
+
+#d:-ms-keyboard-active{
+    height: 10vh;
+    width: 10vh;
+    background: transparent;
+    background-image: url(../img/Controles/wasd/d-selected.png);
+    border: none !important;
+    background-size: 100%;
+}
+
+#d:-ms-keyboard-active{
+    height: 10vh;
+    width: 10vh;
+    background: transparent;
+    background-image: url(../img/Controles/wasd/d-selected.png);
+    border: none !important;
+    background-size: 100%;
+}
+
+#d:-ms-keyboard-active{
+    height: 10vh;
+    width: 10vh;
+    background: transparent;
+    background-image: url(../img/Controles/wasd/d-selected.png);
+    border: none !important;
+    background-size: 100%;
+}
+
+#d:-ms-keyboard-active{
+    height: 10vh;
+    width: 10vh;
+    background: transparent;
+    background-image: url(../img/Controles/wasd/d-selected.png);
+    border: none !important;
+    background-size: 100%;
+}
+
+#d:hover{
+    background-image: url(../img/Controles/wasd/d-selected.png);
 }

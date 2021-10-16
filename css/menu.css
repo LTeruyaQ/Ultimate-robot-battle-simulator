@@ -26,7 +26,7 @@ li{
 }
 
 a:hover{
-    color: rgb(142, 239, 252);
+    color: rgb(0, 225, 255);
 }
 
 #menu{
@@ -42,5 +42,5 @@ a:hover{
     font-family: "Press Start 2P", sans-serif;
     font-size: 40px;
     text-decoration: none;
-    color: rgb(119, 1, 253);
+    color: rgb(141, 42, 255);
 }
