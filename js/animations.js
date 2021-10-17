@@ -75,4 +75,103 @@ document.addEventListener('keyup', function(event) {
   }
 });
 
-//tamanho da arena altura 5 e alrgura 11
+//Animações da nave
+
+function AnimationSpritesInicial (sprite, tipo){
+if(sprite.src == "" && tipo == 1){
+  sprite.src = "../img/Players/nave1/cima.png";
+}
+if(sprite.src == "" && tipo == 1){
+  sprite.src = "../img/Players/nave2/cima.png";
+}
+return sprite;
+}
+
+function AnimationSprites1 (keyCode){
+
+  var sprite = new Image();
+
+  if(keyCode == '38'){
+    sprite.src = "../img/Players/nave1/cima.png";
+    return sprite;
+  }
+
+  if(keyCode == '37'){
+    sprite.src = "../img/Players/nave1/esquerda.png";
+    return sprite;
+  }
+
+  if(keyCode == "40"){
+    sprite.src = "../img/Players/nave1/baixo.png";
+    return sprite;
+  }
+
+  if(keyCode == "39"){
+    sprite.src = "../img/Players/nave1/direita.png";
+    return sprite;
+  }
+
+  if(keyCode == '87' && keyCode == '65'){
+    sprite.src = "../img/Players/nave1/diagonalEsquerdaSuperior.png";
+    return sprite;
+  }
+
+  else if(keyCode == '65' && keyCode == "83"){
+    sprite.src = "../img/Players/nave1/diagonalEsquerdaInferior.png";
+    return sprite;
+  }
+
+  else if(keyCode == "83" && keyCode == "68" ){
+    sprite.src = "../img/Players/nave1/diagonalDireitaInferior.png";
+    return sprite;
+  }
+
+  else if(keyCode == "68" && keyCode == '87'){
+    sprite.src = "../img/Players/nave1/diagonalDireitaSuperior.png";
+    return sprite;
+  }
+};
+
+
+function AnimationSprites2 (keyCode, sprite){
+
+  if(keyCode == '87'){
+    sprite.src = "../img/Players/nave2/cima.png";
+    return sprite;
+  }
+
+  if(keyCode == '65'){
+    sprite.src = "../img/Players/nave2/esquerda.png";
+    return sprite;
+  }
+
+  if(keyCode == "83"){
+    sprite.src = "../img/Players/nave2/baixo.png";
+    return sprite;
+  }
+
+  if(keyCode == "68"){
+    sprite.src = "../img/Players/nave2/direita.png";
+    return sprite;
+  }
+
+  if(keyCode == '87' && keyCode == '65'){
+    sprite.src = "../img/Players/nave2/diagonalEsquerdaSuperior.png";
+    return sprite;
+  }
+
+  else if(keyCode == '65' && keyCode == "83"){
+    sprite.src = "../img/Players/nave2/diagonalEsquerdaInferior.png";
+    return sprite;
+  }
+
+  else if(keyCode == "83" && keyCode == "68" ){
+    sprite.src = "../img/Players/nave2/diagonalDireitaInferior.png";
+    return sprite;
+  }
+
+  else if(keyCode == "68" && keyCode == '87'){
+    sprite.src = "../img/Players/nave2/diagonalDireitaSuperior.png";
+    return sprite;
+  }
+};

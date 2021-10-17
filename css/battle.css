@@ -11,6 +11,7 @@
 
 body{
     background-image: url(../img/backgound/backGoundPartida.gif);
+    background-size: 20vh;
     position: static;
     display: inline-flex;
     justify-content: space-between;
@@ -42,6 +43,19 @@ div.playerArea{
     width: 40%;
     display: block;
 }
+
+button.teclas{
+    height: 10vh;
+    width: 10vh;
+    background: transparent;
+    border: none !important;
+    background-size: 100%;
+}
+
+button.teclasSuperior{
+    margin: 0 5vw;
+}
+
 /*IDs-Elementos unicos da tela*/
 
 #arena{
@@ -54,7 +68,6 @@ div.playerArea{
     background-repeat: no-repeat;
     background-size: 101%;
     margin: 7% 0% 7% 0%;
-
 }
 
 #bordaArena{
@@ -71,88 +84,38 @@ div.playerArea{
 /*Controle 1 - setas*/
 
 #cima{
-    margin: 0 5vw;
-    height: 10vh;
-    width: 10vh;
-    background: transparent;
     background-image: url(../img/Controles/setas/cima.png);
-    border: none !important;
-    background-size: 100%;
 }
 
 #esquerda{
-    height: 10vh;
-    width: 10vh;
-    background: transparent;
     background-image: url(../img/Controles/setas/esquerda.png);
-    border: none !important;
-    background-size: 100%;
 }
 
 #baixo{
-    height: 10vh;
-    width: 10vh;
-    background: transparent;
     background-image: url(../img/Controles/setas/baixo.png);
-    border: none !important;
-    background-size: 100%;
 }
 
 #direita{
-    height: 10vh;
-    width: 10vh;
-    background: transparent;
     background-image: url(../img/Controles/setas/direita.png);
-    border: none !important;
-    background-size: 100%;
 }
 
 
 /*Controle 2 -wasd*/
 
 #w{
-    margin: 0 5vw;
-    height: 10vh;
-    width: 10vh;
-    background: transparent;
     background-image: url(../img/Controles/wasd/w.png);
-    border: none !important;
-    background-size: 100%;
 }
 
 #a{
-    height: 10vh;
-    width: 10vh;
-    background: transparent;
     background-image: url(../img/Controles/wasd/a.png);
-    border: none !important;
-    background-size: 100%;
 }
 
 #s{
-    height: 10vh;
-    width: 10vh;
-    background: transparent;
     background-image: url(../img/Controles/wasd/s.png);
-    border: none !important;
-    background-size: 100%;
 }
 
 #d{
-    height: 10vh;
-    width: 10vh;
-    background: transparent;
     background-image: url(../img/Controles/wasd/d.png);
-    border: none !important;
-    background-size: 100%;
-}
-
-#player1{
-    background-image: url(../img/Players/nave1.png);
-}
-
-#player2{
-    background-image: url(../img/Players/nave2.png);
 }
 /*formatação de imagem*/
 
@@ -175,80 +138,151 @@ img.modelo{
     margin: 50% 0;
 }
 
-/*Eventos*/
+/*resoluções - responsividade*/
+/*
+@media screen and (max-width: 1920px){
 
-#d:-ms-keyboard-active{
-    height: 10vh;
-    width: 10vh;
-    background: transparent;
-    background-image: url(../img/Controles/wasd/d-selected.png);
-    border: none !important;
-    background-size: 100%;
+    *{
+        max-height: 1080px;
+        max-width:1920px;
+    }
+
+        
+    div.teclas{
+        position: relative;
+        padding: 15% 10%;
+        height: 20vh;
+        width: 35vh;
+        left: 1.5vw;
+        }
+    
+        button.teclas{
+            height: 7vh;
+            width: 7vh;
+            background: transparent;
+            border: none !important;
+            background-size: 100%;
+        }
+    
+        button.teclasSuperior{
+            margin: 0 4vw;
+        }
+
+    img.naves{
+        height: 5vh;
+        padding: 0;
+        margin: 0;
+    }
+    
+    img.vidas{
+        position: relative;
+        height: 5vh;
+        padding: 0;
+        margin: -1vw;
+        left: 0.5vw;
+    }
+    
+    img.modelo{
+        height: 15vh;   
+        margin: 50% 0;
+    }
 }
 
-#d:-ms-keyboard-active{
-    height: 10vh;
-    width: 10vh;
-    background: transparent;
-    background-image: url(../img/Controles/wasd/d-selected.png);
-    border: none !important;
-    background-size: 100%;
+@media screen and (max-width: 1440px){
+
+    *{
+        max-height: 771px;
+        max-width:1440px;
+    }
+
+        
+    div.teclas{
+        position: relative;
+        padding: 15% 10%;
+        height: 25vh;
+        width: 40vh;
+        left: 2.5vw;
+        }
+    
+        button.teclas{
+            height: 7vh;
+            width: 7vh;
+            background: transparent;
+            border: none !important;
+            background-size: 100%;
+        }
+    
+        button.teclasSuperior{
+            margin: 0 4vw;
+        }
+
+    img.naves{
+        height: 5vh;
+        padding: 0;
+        margin: 0;
+    }
+    
+    img.vidas{
+        position: relative;
+        height: 5vh;
+        padding: 0;
+        margin: -1vw;
+        left: 1.5vw;
+    }
+    
+    img.modelo{
+        position: relative;
+        height: 15vh;   
+        margin: 50% 0;
+        left: 1vw;
+    }
 }
 
-#d:-ms-keyboard-active{
-    height: 10vh;
-    width: 10vh;
-    background: transparent;
-    background-image: url(../img/Controles/wasd/d-selected.png);
-    border: none !important;
-    background-size: 100%;
-}
-
-#d:-ms-keyboard-active{
-    height: 10vh;
-    width: 10vh;
-    background: transparent;
-    background-image: url(../img/Controles/wasd/d-selected.png);
-    border: none !important;
-    background-size: 100%;
-}
-
-#d:-ms-keyboard-active{
-    height: 10vh;
-    width: 10vh;
-    background: transparent;
-    background-image: url(../img/Controles/wasd/d-selected.png);
-    border: none !important;
-    background-size: 100%;
-}
-
-#d:-ms-keyboard-active{
-    height: 10vh;
-    width: 10vh;
-    background: transparent;
-    background-image: url(../img/Controles/wasd/d-selected.png);
-    border: none !important;
-    background-size: 100%;
-}
-
-#d:-ms-keyboard-active{
-    height: 10vh;
-    width: 10vh;
-    background: transparent;
-    background-image: url(../img/Controles/wasd/d-selected.png);
-    border: none !important;
-    background-size: 100%;
-}
-
-#d:-ms-keyboard-active{
-    height: 10vh;
-    width: 10vh;
-    background: transparent;
-    background-image: url(../img/Controles/wasd/d-selected.png);
-    border: none !important;
-    background-size: 100%;
-}
-
-#d:hover{
-    background-image: url(../img/Controles/wasd/d-selected.png);
+@media screen and (max-width: 1044px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;   
+        max-height: 80vh;
+        max-width:100vw;
+    }
+    
+    div.teclas{
+        position: relative;
+        padding: 15% 10%;
+        height: 25vh;
+        width: 40vh;
+        left: 0.5vw;
+    }
+    
+    button.teclas{
+        height: 10vh;
+        width: 10vh;
+        background: transparent;
+        border: none !important;
+        background-size: 100%;
+    }
+    
+    button.teclasSuperior{
+        margin: 0 5vw;
+    }
+    
+    img.naves{
+        height: 6vh;
+        padding: 0;
+        margin: 0;
+    }
+    
+    img.vidas{
+        position: relative;
+        height: 6vh;
+        padding: 0;
+        margin: -1vw;
+        left: 0.5vw;
+    }
+    
+    img.modelo{
+        height: 20vh;   
+        margin: 50% 0;
+    }
 }

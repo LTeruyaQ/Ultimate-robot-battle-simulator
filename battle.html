@@ -14,56 +14,55 @@
     <div class="playerArea">
         <div class="status">
             <div>
-            <img class="vidas" src="./img/Players/vida.png" alt="">
-            <img class="vidas" src="./img/Players/vida.png" alt="">
-            <img class="vidas" src="./img/Players/vida.png" alt="">
-            <img class="vidas" src="./img/Players/vida.png" alt="">
-            <img class="vidas" src="./img/Players/vida.png" alt="">
-            <img class="vidas" src="./img/Players/vida.png" alt="">
+            <img class="vidas" src="./img/Players/PontosVida/vidaCheia.png" alt="">
+            <img class="vidas" src="./img/Players/PontosVida/vidaCheia.png" alt="">
+            <img class="vidas" src="./img/Players/PontosVida/vidaCheia.png" alt="">
+            <img class="vidas" src="./img/Players/PontosVida/vidaCheia.png" alt="">
+            <img class="vidas" src="./img/Players/PontosVida/vidaCheia.png" alt="">
+            <img class="vidas" src="./img/Players/PontosVida/vidaCheia.png" alt="">
         </div>
-        <img class="modelo" src="./img/Players/nave1.png" alt="">
+        <img class="modelo" src="./img/Players/nave2/cima.png" alt="">
         </div>
 
         <div class="teclas">
             <div>
-                <button id="w"></button>
+                <button id="w" class="teclas teclasSuperior"></button>
             </div>
-            <button id="a"></button>
-            <button id="s"></button>
-            <button id="d"></button>
+            <button id="a" class="teclas"></button>
+            <button id="s" class="teclas"></button>
+            <button id="d" class="teclas"></button>
         </div>
     </div>
 
     <div id="arena">
-        <div id="bordaArena">
-            <img class="naves" src="./img/Players/nave1.png" alt="">
-            <img class="naves" src="./img/Players/nave2.png" alt="">
-        </div>
+        <canvas id="bordaArena"></canvas>
     </div>
 
     <div class="playerArea">
         <div class="status">
             <div>
-            <img class="vidas" src="./img/Players/vida.png" alt="">
-            <img class="vidas" src="./img/Players/vida.png" alt="">
-            <img class="vidas" src="./img/Players/vida.png" alt="">
-            <img class="vidas" src="./img/Players/vida.png" alt="">
-            <img class="vidas" src="./img/Players/vida.png" alt="">
-            <img class="vidas" src="./img/Players/vida.png" alt="">
+            <img class="vidas" src="./img/Players/PontosVida/vidaCheia.png" alt="">
+            <img class="vidas" src="./img/Players/PontosVida/vidaCheia.png" alt="">
+            <img class="vidas" src="./img/Players/PontosVida/vidaCheia.png" alt="">
+            <img class="vidas" src="./img/Players/PontosVida/vidaCheia.png" alt="">
+            <img class="vidas" src="./img/Players/PontosVida/vidaCheia.png" alt="">
+            <img class="vidas" src="./img/Players/PontosVida/vidaCheia.png" alt="">
         </div>
-        <img class="modelo" src="./img/Players/nave2.png" alt="">
+        <img class="modelo" src="./img/Players/nave1/cima.png" alt="">
         </div>
 
         <div class="teclas">
             <div>
-                <button id="cima"></button>
+                <button id="cima" class="teclas teclasSuperior"></button>
             </div>
-            <button id="esquerda"></button>
-            <button id="baixo"></button>
-            <button id="direita"></button>
+            <button id="esquerda" class="teclas"></button>
+            <button id="baixo" class="teclas"></button>
+            <button id="direita" class="teclas"></button>
         </div>
         
     </div>
-    <script src="./js/battle.js"></script>
+    <script src="./js/animations.js"></script>
+    <script src="./js/naves.js"></script>
+    <script src="./js/movimentacao.js"></script>
 </body>
 </html>
