@@ -79,10 +79,10 @@ document.addEventListener('keyup', function(event) {
 
 function AnimationSpritesInicial (sprite, tipo){
 if(sprite.src == "" && tipo == 1){
-  sprite.src = "../img/Players/nave1/cima.png";
+  sprite.src = "../img/Players/nave1/esquerda.png";
 }
-if(sprite.src == "" && tipo == 1){
-  sprite.src = "../img/Players/nave2/cima.png";
+if(sprite.src == "" && tipo == 2){
+  sprite.src = "../img/Players/nave2/direita.png";
 }
 return sprite;
 }
@@ -110,30 +110,36 @@ function AnimationSprites1 (keyCode){
     sprite.src = "../img/Players/nave1/direita.png";
     return sprite;
   }
+};
 
-  if(keyCode == '87' && keyCode == '65'){
+function AnimationDiagonalSprites1 (keyCode1, keyCode2){
+
+  var sprite = new Image();
+
+  if(keyCode1 == '38' && keyCode2 == '37'){
     sprite.src = "../img/Players/nave1/diagonalEsquerdaSuperior.png";
     return sprite;
   }
 
-  else if(keyCode == '65' && keyCode == "83"){
+  else if(keyCode1 == '37' && keyCode2 == "40"){
     sprite.src = "../img/Players/nave1/diagonalEsquerdaInferior.png";
     return sprite;
   }
 
-  else if(keyCode == "83" && keyCode == "68" ){
+  else if(keyCode1 == "40" && keyCode2 == "39" ){
     sprite.src = "../img/Players/nave1/diagonalDireitaInferior.png";
     return sprite;
   }
 
-  else if(keyCode == "68" && keyCode == '87'){
+  else if(keyCode1 == "39" && keyCode2 == '38'){
     sprite.src = "../img/Players/nave1/diagonalDireitaSuperior.png";
     return sprite;
   }
 };
 
+function AnimationSprites2 (keyCode){
 
-function AnimationSprites2 (keyCode, sprite){
+  var sprite = new Image();
 
   if(keyCode == '87'){
     sprite.src = "../img/Players/nave2/cima.png";
@@ -154,23 +160,28 @@ function AnimationSprites2 (keyCode, sprite){
     sprite.src = "../img/Players/nave2/direita.png";
     return sprite;
   }
+};
 
-  if(keyCode == '87' && keyCode == '65'){
+function AnimationDiagonalSprites2 (keyCode1, keyCode2){
+
+  var sprite = new Image();
+
+  if(keyCode1 == '87' && keyCode2 == '65'){
     sprite.src = "../img/Players/nave2/diagonalEsquerdaSuperior.png";
     return sprite;
   }
 
-  else if(keyCode == '65' && keyCode == "83"){
+  else if(keyCode1 == '65' && keyCode2 == "83"){
     sprite.src = "../img/Players/nave2/diagonalEsquerdaInferior.png";
     return sprite;
   }
 
-  else if(keyCode == "83" && keyCode == "68" ){
+  else if(keyCode1 == "83" && keyCode2 == "68" ){
     sprite.src = "../img/Players/nave2/diagonalDireitaInferior.png";
     return sprite;
   }
 
-  else if(keyCode == "68" && keyCode == '87'){
+  else if(keyCode1 == "68" && keyCode2 == '87'){
     sprite.src = "../img/Players/nave2/diagonalDireitaSuperior.png";
     return sprite;
   }
