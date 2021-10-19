@@ -268,7 +268,6 @@
     loop = collision(player1.posX, player1.posY, player1.height, player1.width, player2.posX, player2.posY, player2.height, player2.width);
     Reset();
     ExibirSprites();
-    AtualizaVida(player1HitPoints, player2HitPoints);
   }
   AtualizaTela();
 }());

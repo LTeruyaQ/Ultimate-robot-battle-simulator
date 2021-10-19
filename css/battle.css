@@ -76,13 +76,13 @@ button.teclasSuperior{
 
 #bordaArena{
     height: 22.5vw;
-    width: 45vw; 
+    width: 44.5vw; 
     border: solid 5px rgb(255, 255, 255);
     border-radius: 115px;
     position: relative;
     z-index: 1;
     top: 20%;
-    left: 13%;
+    left: 14%;
 }
 
 /*Controle 1 - setas*/
@@ -121,6 +121,61 @@ button.teclasSuperior{
 #d{
     background-image: url(../img/Controles/wasd/d.png);
 }
+
+/*hitPoints*/
+
+#ht1-1{
+    background-image: url(../img/players/hitPoints/fullHeart.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
+#ht2-1{
+    background-image: url(../img/players/hitPoints/fullHeart.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
+#ht3-1{
+    background-image: url(../img/players/hitPoints/fullHeart.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
+#ht4-1{
+    background-image: url(../img/players/hitPoints/fullHeart.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
+#ht5-1{
+    background-image: url(../img/players/hitPoints/fullHeart.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
+
+#ht1-2{
+    background-image: url(../img/players/hitPoints/fullHeart.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
+#ht2-2{
+    background-image: url(../img/players/hitPoints/fullHeart.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
+#ht3-2{
+    background-image: url(../img/players/hitPoints/fullHeart.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
+#ht4-2{
+    background-image: url(../img/players/hitPoints/fullHeart.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
+#ht5-2{
+    background-image: url(../img/players/hitPoints/fullHeart.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
+
 /*formatação de imagem*/
 
 img.naves{
@@ -134,9 +189,7 @@ img.naves{
     height: 6vh;
     padding: 0;
     margin: -2vw;
-    left: 0.5vw;
-    background-size: 60%;
-    background-repeat: no-repeat;
+    left: 1.5vw;
 }
 
 img.modelo{

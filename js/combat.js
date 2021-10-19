@@ -1,5 +1,5 @@
 //Variaveis
-var player1HitPoints = 12, player2HitPoints = 12;
+var player1HitPoints = 100, player2HitPoints = 100;
 var vencedor;
 
 if(vencedor != null)
@@ -21,12 +21,13 @@ function collision(x1, y1, h1, w1, x2, y2, h2, w2) {
 
 function Damage(){
 
-    let damage1 = Math.floor(Math.random()*6);
-    let damage2 = Math.floor(Math.random()*6);
+    let damage1 = Math.floor(Math.random()*21);
+    let damage2 = Math.floor(Math.random()*21);
 
     player1HitPoints -= damage1; 
     player2HitPoints -= damage2;
 
+    AtualizaVida(player1HitPoints, player2HitPoints);
     Victory();
 }
 
