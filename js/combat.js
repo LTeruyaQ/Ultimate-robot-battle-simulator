@@ -1,56 +1,46 @@
-function combat (x1, y1, x2, y2 ){
+//Variaveis
+var player1HitPoints = 12, player2HitPoints = 12;
+var vencedor;
 
-    //A área das naves de 25x25 px é de 625px no total
+if(vencedor != null)
+document.getElementById("winner").innerHTML = `Vitoria do ${vencedor}!`;
 
+function collision(x1, y1, h1, w1, x2, y2, h2, w2) {
 
-    // console.log(x1, y1, x2, y2);
-    //     if((x1 + 24) == (x2 + 24) && (y1 + 24)  == (y2 + 24)
-    //         ||
-    //         (x1 - 26) <= (x2 - 26) && (y1 - 26)  <= (y2 - 26)
-    //         ||
-    //         (x1 + 24) <= (x2 - 26) && (y1 + 24)  <= (y2 - 26)
-    //         ||
-    //         (x1 - 26) <= (x2 + 24) && (y1 - 26)  <= (y2 + 24)
-    //        ||
-    //         (x1 - 26) <= (x2 + 24) && (y1 + 24)  <= (y2 - 26)
-    //         ||
-    //         (x1 + 24) <= (x2 - 26) && (y1 - 26)  <= (y2 + 24)
-    //         ||
-    //         (x1 + 24) >= (x2 + 24) && (y1 + 24)  >= (y2 + 24)
-    //         ||
-    //        (x1 - 26) >= (x2 - 26) && (y1 - 26)  >= (y2 - 26)
-    //         ||
-    //         (x1 + 24) >= (x2 - 26) && (y1 + 24)  >= (y2 - 26)
-    //         ||
-    //         (x1 - 26) >= (x2 + 24) && (y1 - 26)  >= (y2 + 24)
-    //         ||
-    //        (x1 - 26) >= (x2 + 24) && (y1 + 24)  >= (y2 - 26)
-    //         ||
-    //         (x1 + 24) >= (x2 - 26) && (y1 - 26)  >= (y2 + 24)
-    //         )
-    //         {
-    //             alert("PARO PARO PARO");
-    //         }
+    if (x1 < x2 + w2 &&
+        x1 + w1 > x2 &&
+        y1 < y2 + h2 &&
+        y1 + h1 > y2) {
 
-
-    var rect1 = {x: 5, y: 5, width: 50, height: 50}
-var rect2 = {x: 20, y: 10, width: 10, height: 10}
-
-if (rect1.x < rect2.x + rect2.width &&
-   rect1.x + rect1.width > rect2.x &&
-   rect1.y < rect2.y + rect2.height &&
-   rect1.y + rect1.height > rect2.y) {
-    // collision detected!
-}
-
-// filling in the values =>
-
-if (5 < 30 &&
-    55 > 20 &&
-    5 < 20 &&
-    55 > 10) {
-    // collision detected!
-}
-
+        Damage();
+        return true;
+    }
 
 };
+
+
+function Damage(){
+
+    let damage1 = Math.floor(Math.random()*6);
+    let damage2 = Math.floor(Math.random()*6);
+
+    player1HitPoints -= damage1; 
+    player2HitPoints -= damage2;
+
+    Victory();
+}
+
+function Victory(){
+    
+    if(player1HitPoints <= 0 || player2HitPoints <= 0){
+
+        if(player1HitPoints <= 0 && player2HitPoints >= 0)
+        vencedor = "player 2";
+
+        if(player2HitPoints <= 0 && player1HitPoints >= 0)
+        vencedor = "player 1";
+
+        window.location.href = "../victory.html";
+    }
+    
+}

@@ -2,12 +2,22 @@
   const cnv = document.querySelector('#bordaArena');
   const ctx = cnv.getContext('2d');
 
+  //Varieis de lop
+  let loop, colisao;
+
   //Sprites
   var spritePlayer1 = new Image();
   var spritePlayer2 = new Image();
 
-  spritePlayer1 = AnimationSpritesInicial(spritePlayer1, 1);
-  spritePlayer2 = AnimationSpritesInicial(spritePlayer2, 2);
+  if(spritePlayer1.src == "" ){
+    spritePlayer1 = AnimationSpritesInicial(1);
+  }
+  if(spritePlayer2.src == ""){
+    spritePlayer2 = AnimationSpritesInicial(2);
+  }
+
+
+
 
   //movimentos
   //setas
@@ -61,7 +71,7 @@
     }
   });
 
-//soltar as teclas  
+  //soltar as teclas  
   window.addEventListener('keyup', (e) => {
     const key = e.key;
     switch (key) {
@@ -82,41 +92,40 @@
 
   //Animações
   window.addEventListener('keydown', function (e) {
-    const nomeKey = e.key;
 
-    if (map[38] && map[37]) 
+    if (map[38] && map[37])
       naves[0].img = AnimationDiagonalSprites1('38', '37');
-     else if (map[37] && map[40]) 
+    else if (map[37] && map[40])
       naves[0].img = AnimationDiagonalSprites1('37', '40');
-     else if (map[40] && map[39]) 
+    else if (map[40] && map[39])
       naves[0].img = AnimationDiagonalSprites1('40', '39');
-     else if (map[39] && map[38]) 
+    else if (map[39] && map[38])
       naves[0].img = AnimationDiagonalSprites1('39', '38');
-     else if (map[38]) 
+    else if (map[38])
       naves[0].img = AnimationSprites1('38');
-     else if (map[37]) 
+    else if (map[37])
       naves[0].img = AnimationSprites1('37');
-     else if (map[40]) 
+    else if (map[40])
       naves[0].img = AnimationSprites1('40');
-     else if (map[39]) 
+    else if (map[39])
       naves[0].img = AnimationSprites1('39');
-    
+
   });
 
   //Movimenta nave1
-  function moverSprites1() {
-    if (esquerda && !direita) 
+  function MoverSprites1() {
+    if (esquerda && !direita)
       player1.posX -= player1.velocidade;
-    
-    if (direita && !esquerda) 
+
+    if (direita && !esquerda)
       player1.posX += player1.velocidade;
-    
-    if (cima && !baixo) 
+
+    if (cima && !baixo)
       player1.posY -= player1.velocidade;
-    
-    if (baixo && !cima) 
+
+    if (baixo && !cima)
       player1.posY += player1.velocidade;
-    
+
 
     player1.posX = Math.max(0, Math.min(cnv.width - player1.width, player1.posX));
     player1.posY = Math.max(0, Math.min(cnv.height - player1.height, player1.posY));
@@ -140,10 +149,22 @@
       case 'd':
         d = true;
         break;
+      case 'W':
+        w = true;
+        break;
+      case 'A':
+        a = true;
+        break;
+      case 'S':
+        s = true;
+        break;
+      case 'D':
+        d = true;
+        break;
     }
   });
 
-//soltar as teclas  
+  //soltar as teclas  
   window.addEventListener('keyup', (e) => {
     const key = e.key;
     switch (key) {
@@ -159,6 +180,18 @@
       case 'd':
         d = false;
         break;
+      case 'W':
+        w = false;
+        break;
+      case 'A':
+        a = false;
+        break;
+      case 'S':
+        s = false;
+        break;
+      case 'D':
+        d = false;
+        break;
     }
   });
 
@@ -166,46 +199,46 @@
   window.addEventListener('keydown', function (e) {
     const nomeKey = e.key;
 
-    if (map[87] && map[65])  
+    if (map[87] && map[65])
       naves[1].img = AnimationDiagonalSprites2('87', '65');
-     else if (map[65] && map[83]) 
+    else if (map[65] && map[83])
       naves[1].img = AnimationDiagonalSprites2('65', '83');
-     else if (map[83] && map[68]) 
+    else if (map[83] && map[68])
       naves[1].img = AnimationDiagonalSprites2('83', '68');
-     else if (map[68] && map[87]) 
+    else if (map[68] && map[87])
       naves[1].img = AnimationDiagonalSprites2('68', '87');
-     else if (map[87]) 
+    else if (map[87])
       naves[1].img = AnimationSprites2('87');
-     else if (map[65]) 
+    else if (map[65])
       naves[1].img = AnimationSprites2('65');
-     else if (map[83]) 
+    else if (map[83])
       naves[1].img = AnimationSprites2('83');
-     else if (map[68]) 
+    else if (map[68])
       naves[1].img = AnimationSprites2('68');
-    
+
   });
 
   //movimenta as nave2
-  function moverSprites2() {
-    if (a && !d) 
+  function MoverSprites2() {
+    if (a && !d)
       player2.posX -= player2.velocidade;
-    
-    if (d && !a) 
+
+    if (d && !a)
       player2.posX += player2.velocidade;
-    
-    if (w && !s) 
+
+    if (w && !s)
       player2.posY -= player2.velocidade;
-    
-    if (s && !w) 
+
+    if (s && !w)
       player2.posY += player2.velocidade;
-    
+
 
     player2.posX = Math.max(0, Math.min(cnv.width - player2.width, player2.posX));
     player2.posY = Math.max(0, Math.min(cnv.height - player2.height, player2.posY));
   }
 
   //Exibição
-  function exibirSprites() {
+  function ExibirSprites() {
     ctx.clearRect(0, 0, cnv.width, cnv.height);
     for (const i in naves) {
       const spr = naves[i];
@@ -213,12 +246,29 @@
     }
   }
 
-  function atualizaTela() {
-    window.requestAnimationFrame(atualizaTela, cnv);
-    moverSprites1();
-    moverSprites2();
-    exibirSprites();
-    combat(player1.posX, player1.posY, player2.posX, player2.posY);
+  //Reposicionamento
+ function Reset() {
+
+  if(loop == true){
+    player1.posX = 275;
+    player1.posY = 60;
+
+    player2.posX = 0;
+    player2.posY = 60;
+
+    naves[0].img = AnimationSpritesInicial(1);
+    naves[1].img = AnimationSpritesInicial(2);
   }
-  atualizaTela();
+  }
+
+  function AtualizaTela() {
+    window.requestAnimationFrame(AtualizaTela, cnv);
+    MoverSprites1();
+    MoverSprites2();
+    loop = collision(player1.posX, player1.posY, player1.height, player1.width, player2.posX, player2.posY, player2.height, player2.width);
+    Reset();
+    ExibirSprites();
+    AtualizaVida(player1HitPoints, player2HitPoints);
+  }
+  AtualizaTela();
 }());

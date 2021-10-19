@@ -44,6 +44,10 @@ div.playerArea{
     display: block;
 }
 
+div.hitPoint{
+    display: inline-flex;
+}
+
 button.teclas{
     height: 10vh;
     width: 10vh;
@@ -125,12 +129,14 @@ img.naves{
     margin: 0;
 }
 
-img.vidas{
+.vidas{
     position: relative;
     height: 6vh;
     padding: 0;
-    margin: -1vw;
+    margin: -2vw;
     left: 0.5vw;
+    background-size: 60%;
+    background-repeat: no-repeat;
 }
 
 img.modelo{
