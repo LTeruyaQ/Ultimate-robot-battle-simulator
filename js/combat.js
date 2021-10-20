@@ -2,9 +2,10 @@
 var player1HitPoints = 100, player2HitPoints = 100;
 var vencedor;
 
-if(vencedor != null)
-document.getElementById("winner").innerHTML = `Vitoria do ${vencedor}!`;
-
+window.addEventListener("load", function() {
+    if(vencedor != null)
+    document.getElementById("winner").innerHTML = `Vitoria do ${vencedor}!`;
+});
 
 //funções
 function collision(x1, y1, h1, w1, x2, y2, h2, w2) {
@@ -43,7 +44,15 @@ function Victory(){
         if(player2HitPoints <= 0 && player1HitPoints >= 0)
         vencedor = "player 1";
 
+        var newwin = window.open("../victory.html");
+        newwin.onload = function(){
+
+        this.vencedor = vencedor;
+        this.second = second;
         window.location.href = "../victory.html";
+        }
+
+
     }
     
 }

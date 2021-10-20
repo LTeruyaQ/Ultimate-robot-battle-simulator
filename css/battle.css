@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 /*Formatação geral*/
 
 *{
@@ -38,7 +39,7 @@ div.teclas{
 }
 
 div.playerArea{
-    margin: 15vh 0;
+    margin: 10vh 0;
     height: 80vh;
     width: 40%;
     display: block;
@@ -196,6 +197,7 @@ img.modelo{
     height: 20vh;   
     margin: 50% 0;
 }
+
 
 /*resoluções - responsividade*/
 /*

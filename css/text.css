@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.normalMenu{
+    font-family: "Press Start 2P", sans-serif;
+    font-size: 40px;
+    text-decoration: none;
+    color: rgb(141, 42, 255);
+    text-shadow: 2px 0 0 rgb(5, 5, 5), -2px 0 0 rgb(12, 12, 12), 0 2px 0 rgb(7, 7, 7), 0 -2px 0 rgb(0, 0, 0), 1px 1px rgb(5, 5, 5), -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(2, 2, 2), -1px 1px 0 rgb(0, 0, 0);
+}
+
+.normalBattle{
+    font-family: "Press Start 2P", sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 20% 0;
+    color: rgb(248, 0, 0);
+    text-shadow: 5px 0 0 rgb(5, 5, 5), -5px 0 0 rgb(12, 12, 12), 0 5px 0 rgb(7, 7, 7), 0 -5px 0 rgb(0, 0, 0), 3px 3px rgb(5, 5, 5), -3px -3px 0 rgb(0, 0, 0), 3px -3px 0 rgb(2, 2, 2), -3px 3px 0 rgb(0, 0, 0);
+}
+
+.normalVictory{
+    font-family: "Press Start 2P", sans-serif;
+    font-size: 40px;
+    text-decoration: none;
+    color: rgb(0, 225, 255);
+    text-shadow: 2px 0 0 rgb(5, 5, 5), -2px 0 0 rgb(12, 12, 12), 0 2px 0 rgb(7, 7, 7), 0 -2px 0 rgb(0, 0, 0), 1px 1px rgb(5, 5, 5), -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(2, 2, 2), -1px 1px 0 rgb(0, 0, 0);
+}
+
+.titleVictory{
+    text-align: center;
+    margin-top: 5%;
+    text-shadow: 2px 0 0 rgb(5, 5, 5), -2px 0 0 rgb(12, 12, 12), 0 2px 0 rgb(255, 91, 79), 0 -2px 0 rgb(255, 91, 79), 1px 1px rgb(255, 91, 79), -1px -1px 0 rgb(255, 91, 79), 1px -1px 0 rgb(255, 91, 79), -1px 1px 0 rgb(255, 91, 79);
+}

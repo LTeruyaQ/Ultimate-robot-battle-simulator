@@ -37,11 +37,3 @@ a:hover{
 }
 
 /* Formatação de texto */
-
-.normal{
-    font-family: "Press Start 2P", sans-serif;
-    font-size: 40px;
-    text-decoration: none;
-    color: rgb(141, 42, 255);
-    text-shadow: 2px 0 0 rgb(5, 5, 5), -2px 0 0 rgb(12, 12, 12), 0 2px 0 rgb(7, 7, 7), 0 -2px 0 rgb(0, 0, 0), 1px 1px rgb(5, 5, 5), -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(2, 2, 2), -1px 1px 0 rgb(0, 0, 0);
-}
