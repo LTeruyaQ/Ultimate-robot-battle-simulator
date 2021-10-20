@@ -5,6 +5,8 @@ var vencedor;
 if(vencedor != null)
 document.getElementById("winner").innerHTML = `Vitoria do ${vencedor}!`;
 
+
+//funções
 function collision(x1, y1, h1, w1, x2, y2, h2, w2) {
 
     if (x1 < x2 + w2 &&

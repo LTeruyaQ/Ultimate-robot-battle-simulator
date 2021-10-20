@@ -206,9 +206,6 @@ function AnimationDiagonalSprites2(keyCode1, keyCode2) {
 //Animação Hit Points
 function AtualizaVida(vida1, vida2) {
 
-console.log(vida1);
-console.log(vida2);
-
   if (vida1 <= 0) {
     document.getElementById(`ht1-1`).style.backgroundImage = "url(../img/players/hitPoints/emptyHeart.png)";
     document.getElementById(`ht2-1`).style.backgroundImage = "url(../img/players/hitPoints/emptyHeart.png)";
