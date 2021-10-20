@@ -206,6 +206,8 @@ function AnimationDiagonalSprites2(keyCode1, keyCode2) {
 //Animação Hit Points
 function AtualizaVida(vida1, vida2) {
 
+  // //Animação dos corações do player 1
+
   if (vida1 <= 0) {
     document.getElementById(`ht1-1`).style.backgroundImage = "url(../img/players/hitPoints/emptyHeart.png)";
     document.getElementById(`ht2-1`).style.backgroundImage = "url(../img/players/hitPoints/emptyHeart.png)";
@@ -283,8 +285,8 @@ function AtualizaVida(vida1, vida2) {
     document.getElementById(`ht4-1`).style.backgroundImage = "url(../img/players/hitPoints/fullHeart.png)";
     document.getElementById(`ht5-1`).style.backgroundImage = "url(../img/players/hitPoints/fullHeart.png)";
   }
-  
-  //   //Animação dos corações do player 2
+
+  //Animação dos corações do player 2
 
   if (vida2 <= 0) {
     document.getElementById(`ht1-2`).style.backgroundImage = "url(../img/players/hitPoints/emptyHeart.png)";

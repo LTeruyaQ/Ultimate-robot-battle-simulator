@@ -9,10 +9,10 @@
   var spritePlayer1 = new Image();
   var spritePlayer2 = new Image();
 
-  if(spritePlayer1.src == "" ){
+  if (spritePlayer1.src == "") {
     spritePlayer1 = AnimationSpritesInicial(1);
   }
-  if(spritePlayer2.src == ""){
+  if (spritePlayer2.src == "") {
     spritePlayer2 = AnimationSpritesInicial(2);
   }
 
@@ -247,18 +247,18 @@
   }
 
   //Reposicionamento
- function Reset() {
+  function Reset() {
 
-  if(loop == true){
-    player1.posX = 275;
-    player1.posY = 60;
+    if (loop == true) {
+      player1.posX = 275;
+      player1.posY = 60;
 
-    player2.posX = 0;
-    player2.posY = 60;
+      player2.posX = 0;
+      player2.posY = 60;
 
-    naves[0].img = AnimationSpritesInicial(1);
-    naves[1].img = AnimationSpritesInicial(2);
-  }
+      naves[0].img = AnimationSpritesInicial(1);
+      naves[1].img = AnimationSpritesInicial(2);
+    }
   }
 
   function AtualizaTela() {

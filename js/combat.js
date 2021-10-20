@@ -2,9 +2,11 @@
 var player1HitPoints = 100, player2HitPoints = 100;
 var vencedor;
 
-window.addEventListener("load", function() {
-    if(vencedor != null)
-    document.getElementById("winner").innerHTML = `Vitoria do ${vencedor}!`;
+window.addEventListener("load", function () {
+    vencedor = localStorage.getItem("vencedor");
+
+    if (vencedor != null)
+        document.getElementById("winner").innerHTML = `Vitoria do ${vencedor}!`;
 });
 
 //funções
@@ -22,37 +24,30 @@ function collision(x1, y1, h1, w1, x2, y2, h2, w2) {
 };
 
 
-function Damage(){
+function Damage() {
 
-    let damage1 = Math.floor(Math.random()*21);
-    let damage2 = Math.floor(Math.random()*21);
+    let damage1 = Math.floor(Math.random() * 21);
+    let damage2 = Math.floor(Math.random() * 21);
 
-    player1HitPoints -= damage1; 
+    player1HitPoints -= damage1;
     player2HitPoints -= damage2;
 
     AtualizaVida(player1HitPoints, player2HitPoints);
     Victory();
 }
 
-function Victory(){
-    
-    if(player1HitPoints <= 0 || player2HitPoints <= 0){
+function Victory() {
 
-        if(player1HitPoints <= 0 && player2HitPoints >= 0)
-        vencedor = "player 2";
+    if (player1HitPoints <= 0 || player2HitPoints <= 0) {
 
-        if(player2HitPoints <= 0 && player1HitPoints >= 0)
-        vencedor = "player 1";
+        if (player1HitPoints <= 0 && player2HitPoints >= 0)
+            vencedor = "player 2";
 
-        var newwin = window.open("../victory.html");
-        newwin.onload = function(){
+        if (player2HitPoints <= 0 && player1HitPoints >= 0)
+            vencedor = "player 1";
 
-        this.vencedor = vencedor;
-        this.second = second;
-        window.location.href = "../victory.html";
-        }
-
-
+            localStorage.setItem("vencedor", vencedor);
+            window.location.href = "../victory.html";
     }
-    
+
 }
