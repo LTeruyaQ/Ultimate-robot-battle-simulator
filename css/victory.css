@@ -18,6 +18,10 @@ body{
     background-size: 100%;
 }
 
+#deite{
+    visibility: hidden;
+}
+
 
 li{
     list-style-type: none;
@@ -36,6 +40,64 @@ a:hover{
     text-align: center;
 }
 
+/*resoluções - responsividade*/
 
+@media screen and (max-width: 1440px){
 
+li{
+    line-height: 10vh;
+}
 
+#menu{
+    left: 26%;
+}
+}
+
+@media screen and (max-width: 1030px){
+    #menu{
+        left: 20%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #menu{
+        top:65%;
+        left: 20%;
+    }
+
+    body{
+        background-position-x: 50%;
+        background-position-y: 0%;
+        background-size: 105%;
+    }
+}
+
+@media screen and (max-width: 400px){
+
+    body{
+        background-image: none;
+        background-color: black;
+    }
+
+    h1{
+        visibility: hidden;
+    }
+
+    a{
+        visibility: hidden;
+    }
+
+    #deite{
+        visibility: visible;
+        margin-top: 10%;
+    }
+
+    #menu{
+        height: 100%;
+        top:35%;
+        left: 0%;
+        background-image: url(../img/backgound/rotate.gif);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }   
+}

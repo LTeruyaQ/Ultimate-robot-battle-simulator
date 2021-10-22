@@ -29,6 +29,10 @@ a:hover{
     color: rgb(0, 225, 255);
 }
 
+#deite{
+    visibility: hidden;
+}
+
 #menu{
     position: fixed;
     top:80%;
@@ -36,4 +40,45 @@ a:hover{
     text-align: center;
 }
 
-/* Formatação de texto */
+
+@media screen and (max-width: 768px){
+    #menu{
+        top:80%;
+    }
+
+    body{
+        background-position-x: 50%;
+        background-position-y: 0%;
+        background-size: 105%;
+    }
+}
+
+@media screen and (max-width: 400px){
+    body{
+        background-image: none;
+        background-color: black;
+    }
+
+    h1{
+        visibility: hidden;
+    }
+
+    a{
+        visibility: hidden;
+    }
+    #deite{
+        visibility: visible;
+        margin-top: 30%;
+    }
+
+    #menu{
+        height: 100%;
+        width: 100%;
+        top:30%;
+        left: 0%;
+        background-image: url(../img/backgound/rotate.gif);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    
+}

@@ -16,9 +16,6 @@
     spritePlayer2 = AnimationSpritesInicial(2);
   }
 
-
-
-
   //movimentos
   //setas
   let esquerda = false;

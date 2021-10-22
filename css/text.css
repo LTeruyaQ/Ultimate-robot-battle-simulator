@@ -30,3 +30,53 @@
     margin-top: 5%;
     text-shadow: 2px 0 0 rgb(5, 5, 5), -2px 0 0 rgb(12, 12, 12), 0 2px 0 rgb(255, 91, 79), 0 -2px 0 rgb(255, 91, 79), 1px 1px rgb(255, 91, 79), -1px -1px 0 rgb(255, 91, 79), 1px -1px 0 rgb(255, 91, 79), -1px 1px 0 rgb(255, 91, 79);
 }
+
+/*resoluções - responsividade*/
+
+@media screen and (max-width: 1440px){
+
+.normalBattle{
+    font-size: 16px;
+}
+
+.normalVictory{
+    margin-top: 5%;
+}
+}
+
+@media screen and (max-width: 1030px){
+
+    .normalBattle{
+        font-size: 12px;
+    }
+    
+}
+
+@media screen and (max-width: 768px){
+
+    .normalBattle{
+        font-size: 9px;
+    }
+    
+    .normalVictory{
+        font-size: 25px;       
+    }
+
+    .normalMenu{
+        font-size: 25px; 
+    }
+    
+}
+
+@media screen and (max-width: 400px){
+
+    #deite{
+        font-size: 25px;
+        color: white;
+    }
+    
+    .normalBattle{
+        font-size: 40px;
+    }
+
+}
