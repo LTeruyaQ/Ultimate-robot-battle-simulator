@@ -47,7 +47,7 @@ function Victory() {
             vencedor = "player 1";
 
             localStorage.setItem("vencedor", vencedor);
-            window.location.href = "../victory.html";
+            window.location.href = "./victory.html";
     }
 
 }
